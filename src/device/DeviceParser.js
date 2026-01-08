@@ -14,7 +14,7 @@ export class DeviceParser {
             }
         }
 
-        if (emulatorPort.includes(':')) {
+        if (deviceId.includes(':')) {
             const [host, port] = deviceId.split(':')
             return {
                 type: 'tcp/ip',
